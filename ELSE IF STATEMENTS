@@ -1,0 +1,21 @@
+ELSE IF STATEMENTS IN JAVASCRIPT
+
+Else if statements/conditions are statements that are normally used when the 
+previous statement/condition used is false. An if statement/condition must first 
+occur before the else if statement/condition are used.
+
+N0T RECOMMENDED
+else if (true) {
+	console.log('You are a developer');
+} 
+
+This is not recommended because it didnt start with an if statement/condition.
+
+RECOMMENDED
+if (false) {
+	console.log('You are not a developer');
+} else if (true) {
+	console.log('You are a developer');
+}
+
+This is recommended because it starts with an if statement/condition
