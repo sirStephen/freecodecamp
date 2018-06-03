@@ -1,0 +1,69 @@
+SWITCH STATEMENTS
+
+Switch statements is a type of conditional statement where an expression 
+executes a code if it matches the case value. Switch statements and If 
+statements almost work the same way. When using a switch statement, always remember to break out of that condition using the 'break;' syntax. Of course
+there are times where you intentionally leave out the 'break;' syntax
+because of what you are actually trying to achieve. I will give examples
+below.
+
+This is a code challenge from freecodecamp that i did. I am going to use it to
+explain 
+
+function switchOfStuff(val) {
+  var answer = "";
+  // Only change code below this line
+  switch(val) {
+    case 'a':
+    answer = 'apple';
+    break;
+    case 'b':
+    answer = 'bird';
+    break;
+    case 'c':
+    answer = 'cat';
+    break;
+    case 'd':
+    answer = 'stuff';
+    break;
+    case 4:
+    answer = 'stuff';
+    break;
+    default: 
+      answer = 'stuff';
+  }
+  // Only change code above this line  
+  return answer;  
+}
+// Change this value to test
+switchOfStuff('a');
+
+The break syntax is simply trying to say that if the value of 'switchOfStuff()' matches the 'case' return the output given to that particular 'case' and break out of that loop and end the program.
+
+But there are cases when you don't want that program to break. You want it to continue looping so you will have to ignore the 'break' syntax. For example
+
+function daysOfTheWeek(day) {
+  var answer = "";
+  switch(day) {
+    case 'monday':
+    answer = 'Monday';
+    case 'tuesday':
+    answer = 'Tuesday';
+    case 'wednesday':
+    answer = 'Wednesday';
+    case 'thursday':
+    answer = 'Thursday';
+    case 'friday':
+    answer = 'Friday';
+    case 'saturday':
+    answer = 'Saturday';
+    case 'sunday':
+    answer = 'Sunday';
+    default: 
+      answer = 'not a name of day';
+  }  
+  return answer;  
+}
+daysOfTheWeek('monday');
+
+Test it on your console to spot the difference. Also add 'break' syntax to the code to see the behaviour to have a bettr understanding.
