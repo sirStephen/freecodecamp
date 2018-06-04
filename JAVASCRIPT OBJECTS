@@ -1,0 +1,39 @@
+JAVASCRIPT OBJECTS
+
+They are similar to arrays but instead of using indexes to access their data, you access them using their properties.
+
+Objects are useful for storing data in a structured way.
+
+Example,
+
+let cat = {
+	"name": "Cruffy",
+	"legs": 4,
+	"tails": 1,
+	"enemies": ["water", "dogs"]
+};
+
+The properties are stored as strings eg "name", "legs" etc.
+
+There are two ways to access the properties of an object.
+Through dot notation(.) and bracket notation([]). Very similar to an array. 
+
+Dot Notation(.) is used when you know the property you want to access. example
+
+let myDog = {
+	"name": "Black",
+	"color": "black"
+};
+
+let nameOfMyDog = myDog.name; // Black
+let colorOfMyDog = myDog.color; // color
+
+Bracket Notation([]) is used when the property has a space between its name. However, you can still use this when there is no space in the property. example
+
+let myDog = {
+	"name of dog": "Black",
+	"color of dog": "black"
+};
+
+myDog["name of dog"]; // Black
+myDog["color of dog"]; // black
