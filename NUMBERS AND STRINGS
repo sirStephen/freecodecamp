@@ -1,0 +1,39 @@
+Today I am going to talk about data types. I am picking the first common two. 
+And they are numbers and strings. In Javascript, any value that is wrapped with
+a '' or "" is a string. For instance, 
+
+let name = 'Gregory';
+
+Gregory becomes a string. 
+name on the left hand side is name of the variable.
+let is the es6 reserved word for storing variables.
+
+But what happens when you do this;
+
+let name = Gregory;
+
+You will get an error from the browser console or terminal if you are using node
+to run your javascript files. The errors will say something like this.
+
+'ReferenceError: Gregory is not defined' and that is because when you created the 
+variale called name, it was expecting a string which is normallly wrapped with '' 
+or "".
+
+NUMBERS
+Numbers is also a data type in Javascript. It has almost same rules with strings data
+type. The major difference is you are not allowed to wrapped your numbers in '' or "".
+If wrapped, Javascript will see it as a string. example
+
+let number = 1;
+
+1 is a number;
+number in the left hand side is name of the variable.
+let is the es6 reserved word for storing variables.
+
+more examples
+
+let number = '1';
+The above example is not number data type. Why??? because it is wrapped with a '' or "".
+
+let number = 'one';
+Also not a number. 
