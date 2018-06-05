@@ -1,0 +1,24 @@
+RULES GUIDING VARIABLE BAMES
+1. You cant define a variable more than once.
+let petName = 'Black';
+let petname = 'Cruffy';
+console.log(petName);
+
+The above code will throw an error. However, if you want to reassign a value to
+a variable, you can do this.
+let petName = 'Black';
+petName = 'Cruffy'
+console.log(petName);
+
+2. All variable names must start with small letters. You cannot start a variable
+with a number or any symbols that is not a letter. examples
+let 1 = 1; - bad.
+let one = 1; - good.
+
+let _name = 'Gregory'; - bad.
+let name = 'Gregory'; - good.
+let name_ = 'Gregory'; - good.
+
+3. You are not allowed to use reserved words meant for javascript.
+let let = 'Gregory'; - bad.
+let name = 'Gregory'; - good.
