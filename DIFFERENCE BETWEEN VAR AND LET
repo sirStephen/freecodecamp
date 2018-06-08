@@ -1,0 +1,38 @@
+1. Var is scoped to the nearest function block and Let is scoped to the nearest 
+enclosing block. But both are global if outside a block. example
+
+FOR VAR
+function byE40() {
+    // x *is* visible out here
+
+    for( var x = 0; x < 5; x++ ) {
+        // x is visible to the whole function
+    }
+
+    // x *is* visible out here
+}
+
+FOR LET
+function allyIlliterate() {
+  // y is *not* visible out here
+
+  for( let y = 0; y < 5; y++ ) {
+    // y is only visible in here (and in the for() parentheses)
+    //and there is a separate y variable for each iteration of the loop
+  }
+
+  // y is *not* visible out here
+}
+
+2. Global variabes defined with 'let' will not be added as properties on the global 
+window object like the ones defined with 'var'. example
+
+var varVariable = “this is a var variable”;
+let letVariable = “this is a let variable”;
+
+console.log(window.varVariable); //this is a var variable
+console.log(window.letVariable); //undefined
+
+3. Redeclaration 
+	Assuming strict mode, 'var' will let you re-declare the same variable in the same scope 
+	but 'let' won't allow you.

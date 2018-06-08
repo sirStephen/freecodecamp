@@ -37,3 +37,13 @@ let myDog = {
 
 myDog["name of dog"]; // Black
 myDog["color of dog"]; // black
+
+github more info
+Although this statement is right, there are better reasons to use the bracket notation, for instance, there are cases when you have to resolve the object's property through a variable name, using your example above:
+
+let myDog ={
+         name: "Black",
+         color: "black"
+}
+let myProperty="color";
+console.log(myDog[myProperty]); //black;
